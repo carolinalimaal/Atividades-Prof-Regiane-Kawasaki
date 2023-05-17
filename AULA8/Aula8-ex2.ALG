@@ -1,20 +1,22 @@
 Algoritmo "semnome"
 // Disciplina   : Algoritmos
 // Professor    : Regiane Kawasaki
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Carolina de Lima Alves
 // Data atual  : 16/05/2023
 Var
-// Seção de Declarações das variáveis
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    vet: vetor[1..50] de real
    num, x: inteiro
+   soma: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
-   vet[1] <- 1
-
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    num <- 1
-   para x de 2 ate 50 faca
+   soma <- 1
+   para x de 1 ate 50 faca
         vet[x] <- num/(2*x)
+        soma <- soma + vet[x]
    fimpara
+   escreva("A soma de 1+1/2+1/4+1/6+...+1/100 Ã© igual a: ", soma)
 Fimalgoritmo
