@@ -6,25 +6,37 @@ Algoritmo "semnome"
 // Data atual  : 16/05/2023
 Var
 // Seção de Declarações das variáveis
-   vet: vetor[1..20] de real
+   vet1: vetor[1..20] de real
+   vet2: vetor[1..20] de real
    x, y: inteiro
-   
+
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
    para x de 1 ate 20 faca
         escreva("Insira o", x, "º valor: ")
-        leia(vet[x])
+        leia(vet1[x])
    fimpara
-   
-   escreva("VETOR: [")
+
+   escreva("VETOR ORIGINAL : [")
    para x de 1 ate 20 faca
-        escreva(vet[x])
+        escreva(vet1[x], ", ")
    fimpara
    escreva("]")
    
-   para y de 20 ate 1 passo -1 faca
-        para x de 1 ate 20 faca
-             vet[y] <- vet[x]
-        fimpara
+   y <- 20
+   x <- 1
+   enquanto y >= 1 faca
+            enquanto x <= 20 faca
+                    vet2[y] <- vet1[x]
+                    y <- y - 1
+                    x <- x + 1
+            fimenquanto
+   fimenquanto
+
+   escreval()
+   escreva("VETOR INVERTIDO: [")
+   para y de 1 ate 20 faca
+        escreva(vet2[y], ", ")
    fimpara
+   escreva("]")
 Fimalgoritmo
