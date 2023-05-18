@@ -1,7 +1,7 @@
 Algoritmo "semnome"
 // Disciplina   : Algoritmos
 // Professor    : Regiane Kawasaki
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Carolina de Lima Alves
 // Data atual  : 16/05/2023
 Var
@@ -11,11 +11,11 @@ Var
 
 Inicio
       para x de 1 ate 5 faca:
-           escreva("Digite o", x,"º valor: ")
+           escreva("Digite o", x,"Âº valor: ")
            leia(vetElem[x])
            se (x % 2) <> 0 entao
               soma <- soma + vetElem[x]
            fimse
       fimpara
-      escreva("A soma dos valores nas posições ímpares é", soma)
+      escreva("A soma dos valores nas posiÃ§Ãµes Ã­mpares Ã©", soma)
 Fimalgoritmo
