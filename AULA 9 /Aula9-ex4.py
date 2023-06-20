@@ -2,7 +2,7 @@ matriz1 = [[0 for l in range(3)] for c in range(3)]
 
 for l in range(3):
     for c in range(3):
-        matriz1 = int(input(f'Elemento [{l+1} x {c+1}]: '))
+        matriz1[l][c] = int(input(f'Elemento [{l+1} x {c+1}]: '))
    
 matriz2 = matriz1 
 matriz3 = [[0 for l in range(3)] for c in range(3)]
@@ -10,7 +10,7 @@ matriz3 = [[0 for l in range(3)] for c in range(3)]
 print('MATRIZ 1')
 for l in range(3):
     for c in range(3):
-        print(f'[{matriz1[l][c]:^5}]', end='')
+        print(f'[{matriz1[l][c]}]', end='')
     print()
 
 print('MATRIZ 1 AO QUADRADO')
